@@ -1,0 +1,97 @@
+.info-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background: #fff8f0;
+}
+
+.info-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: min(620px, 100%);
+	margin: 0;
+	padding: 34px 30px;
+	text-align: center;
+}
+
+.info-content h2 {
+	margin: 0 0 12px;
+	color: #781c12;
+	font-size: 28px;
+}
+
+.info-content p:not(.details-label) {
+	max-width: 420px;
+	color: #666;
+	line-height: 1.6;
+}
+
+.contact-details {
+	width: min(420px, 100%);
+	margin-top: 8px;
+}
+
+.contact-list {
+	display: grid;
+	gap: 4px;
+	color: #666;
+	font-size: 13px;
+}
+
+.contact-list a {
+	color: #781c12;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+	text-decoration: underline;
+}
+
+.contact-form {
+	display: grid;
+	gap: 6px;
+	margin-top: 18px;
+	text-align: left;
+}
+
+.contact-form label {
+	color: #781c12;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+	border: 1px solid #ddd;
+	font: inherit;
+	resize: vertical;
+}
+
+.contact-form button {
+	justify-self: start;
+	margin-top: 6px;
+	padding: 9px 12px;
+	border: 0;
+	background: #d63031;
+	color: #fff;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.contact-form button:hover,
+.contact-form button:focus-visible {
+	background: #781c12;
+}
